@@ -8,12 +8,24 @@
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "features": {
     "./features/zsh": {},
-    "./features/neovim": {}
+    "./features/neovim": {},
+    "./features/claude": {},
+    "./features/codex": {},
+    "./features/antigravity": {},
+    "./features/ollama": {},
+    "./features/node": {},
+    "./features/python": {},
+    "./features/latex": {}
   },
+  "forwardPorts": [11434],
   "customizations": {
     "vscode": {
       "settings": {},
-      "extensions": []
+      "extensions": [
+        "anthropic.claude-code",
+        "openai.chatgpt",
+        "Google.google-antigravity"
+      ]
     }
   },
   "postCreateCommand": "sudo chown -R $(id -u):$(id -g) ${containerWorkspaceFolder}"

@@ -16,4 +16,4 @@ rm -f "/tmp/${CODEX_TGZ}" /tmp/codex-x86_64-unknown-linux-musl
 
 install -D -m 755 "$(dirname "$0")/login.sh" /usr/local/share/codex/login.sh
 
-sudo -u "${USERNAME}" -H codex --version
+sudo -u "${USERNAME}" -H /usr/local/bin/codex --version

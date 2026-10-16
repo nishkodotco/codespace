@@ -13,4 +13,4 @@ ln -sf "${USER_HOME}/.local/bin/claude" /usr/local/bin/claude
 
 # sign-in comes from the volume, or from the CLAUDE_CODE_OAUTH_TOKEN /
 # ANTHROPIC_API_KEY Codespaces secret, which claude reads directly
-sudo -u "${USERNAME}" -H claude --version
+sudo -u "${USERNAME}" -H /usr/local/bin/claude --version

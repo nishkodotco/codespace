@@ -13,4 +13,4 @@ ln -sf "${USER_HOME}/.local/bin/agy" /usr/local/bin/agy
 
 install -D -m 755 "$(dirname "$0")/login.sh" /usr/local/share/antigravity/login.sh
 
-sudo -u "${USERNAME}" -H agy --version
+sudo -u "${USERNAME}" -H /usr/local/bin/agy --version
