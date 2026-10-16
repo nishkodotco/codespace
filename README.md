@@ -9,10 +9,3 @@
 </p>
 
 ---
-
-Two configurations share the same dockerfile and features. Pick one under **Code → Codespaces → ⋯ → New with options**:
-
-- [minimal](.devcontainer/minimal/devcontainer.json): `nushell` · `neovim` · `gh` plus the AI CLIs and extensions (`claude` · `codex` · `antigravity`)
-- [maximal](.devcontainer/maximal/devcontainer.json): every feature, including `ollama` and `latex` (slowest to build)
-
-Features live in [.devcontainer/features](.devcontainer/features). Toggle them in either config and rebuild.
