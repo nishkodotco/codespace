@@ -23,7 +23,8 @@ RUN groupadd --gid ${USER_GID} ${USERNAME} \
  && chmod 0440 /etc/sudoers.d/${USERNAME}
 
 WORKDIR /workspaces
+# no ENV HOME: features run as root, and a pinned HOME makes root write into
+# /home/${USERNAME} (e.g. ~/.cache), which then blocks per-user installers
 USER ${USERNAME}
-ENV HOME=/home/${USERNAME}
 
 CMD ["bash"]

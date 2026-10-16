@@ -2,6 +2,6 @@
   "id": "latex",
   "name": "latex",
   "version": "1.0.0",
-  "description": "Install latex via microdnf.",
+  "description": "Install TinyTeX with common LaTeX packages for the container user.",
   "options": {}
 }
