@@ -18,15 +18,16 @@ if [[ ! -x "${TL_BIN}/tlmgr" ]]; then
 fi
 
 sudo -u "${USERNAME}" -H "${TL_BIN}/tlmgr" update --self || true
+# amssymb.sty ships inside amsfonts; it is not a separate package
 sudo -u "${USERNAME}" -H "${TL_BIN}/tlmgr" install \
-    amsmath amsfonts amssymb mathtools polynom soul \
-    geometry xcolor float latexmk \
-    || true
+    amsmath amsfonts mathtools polynom soul \
+    geometry xcolor float latexmk
 sudo -u "${USERNAME}" -H "${TL_BIN}/mktexlsr"
 sudo -u "${USERNAME}" -H "${TL_BIN}/updmap-sys" --quiet || true
 
 # put the TeX binaries on everyone's PATH
 ln -sf "${TL_BIN}"/* /usr/local/bin/
 
-sudo -u "${USERNAME}" -H pdflatex --version | head -n1
-sudo -u "${USERNAME}" -H kpsewhich amsmath.sty xcolor.sty
+# sudo uses secure_path (no /usr/local/bin on UBI 9), so call binaries by full path
+sudo -u "${USERNAME}" -H "${TL_BIN}/pdflatex" --version | head -n1
+sudo -u "${USERNAME}" -H "${TL_BIN}/kpsewhich" amsmath.sty xcolor.sty amssymb.sty
