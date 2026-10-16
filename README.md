@@ -17,10 +17,3 @@ Three configurations share the same dockerfile and features. Pick one under **Co
 - [maximal](.devcontainer/maximal/devcontainer.json): every feature, including `ollama` and `latex` (slowest to build)
 
 Features live in [.devcontainer/features](.devcontainer/features). Toggle them in either config and rebuild.
-
-`ollama` and `latex` are heavy, so they're opt-in. Install them in a running codespace when needed:
-
-```sh
-sudo bash .devcontainer/features/ollama/install.sh && nohup ollama serve > /tmp/ollama.log 2>&1 &
-bash .devcontainer/features/latex/install.sh
-```
