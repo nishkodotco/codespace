@@ -1,0 +1,15 @@
+{
+  "id": "antigravity",
+  "name": "antigravity",
+  "version": "1.0.0",
+  "description": "Install the Antigravity CLI (agy) with its sign-in kept on a volume across rebuilds.",
+  "options": {},
+  "mounts": [
+    {
+      "source": "antigravity-config-${devcontainerId}",
+      "target": "/home/nishko/.gemini",
+      "type": "volume"
+    }
+  ],
+  "postStartCommand": "/usr/local/share/antigravity/login.sh"
+}

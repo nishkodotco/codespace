@@ -1,0 +1,11 @@
+{
+  "id": "ollama",
+  "name": "ollama",
+  "version": "1.0.0",
+  "description": "Install ollama and start its server on container start.",
+  "options": {},
+  "containerEnv": {
+    "OLLAMA_HOST": "0.0.0.0:11434"
+  },
+  "postStartCommand": "nohup ollama serve > /tmp/ollama.log 2>&1 &"
+}

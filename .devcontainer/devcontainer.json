@@ -1,0 +1,20 @@
+{
+  "name": "playground",
+  "build": {
+    "context": "..",
+    "dockerfile": "./dockerfile"
+  },
+  "remoteUser": "nishko",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+    "./features/zsh": {},
+    "./features/neovim": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": []
+    }
+  },
+  "postCreateCommand": "sudo chown -R $(id -u):$(id -g) ${containerWorkspaceFolder}"
+}

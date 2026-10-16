@@ -1,0 +1,7 @@
+{
+  "id": "node",
+  "name": "Node.js",
+  "version": "1.0.0",
+  "description": "Install Node.js and npm using NodeSource setup script.",
+  "options": {}
+}

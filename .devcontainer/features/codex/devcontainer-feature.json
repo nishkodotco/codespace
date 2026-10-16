@@ -1,0 +1,18 @@
+{
+  "id": "codex",
+  "name": "codex",
+  "version": "1.0.0",
+  "description": "Install the OpenAI Codex CLI with its sign-in kept on a volume across rebuilds.",
+  "options": {},
+  "containerEnv": {
+    "CODEX_HOME": "/home/nishko/.codex"
+  },
+  "mounts": [
+    {
+      "source": "codex-config-${devcontainerId}",
+      "target": "/home/nishko/.codex",
+      "type": "volume"
+    }
+  ],
+  "postStartCommand": "/usr/local/share/codex/login.sh"
+}

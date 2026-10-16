@@ -1,0 +1,17 @@
+{
+  "id": "claude",
+  "name": "claude",
+  "version": "1.0.0",
+  "description": "Install Claude Code with its sign-in kept on a volume across rebuilds.",
+  "options": {},
+  "containerEnv": {
+    "CLAUDE_CONFIG_DIR": "/home/nishko/.claude"
+  },
+  "mounts": [
+    {
+      "source": "claude-config-${devcontainerId}",
+      "target": "/home/nishko/.claude",
+      "type": "volume"
+    }
+  ]
+}
