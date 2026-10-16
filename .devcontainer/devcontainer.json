@@ -12,12 +12,9 @@
     "./features/claude": {},
     "./features/codex": {},
     "./features/antigravity": {},
-    "./features/ollama": {},
     "./features/node": {},
-    "./features/python": {},
-    "./features/latex": {}
+    "./features/python": {}
   },
-  "forwardPorts": [11434],
   "customizations": {
     "vscode": {
       "settings": {
