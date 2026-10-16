@@ -24,5 +24,3 @@ Features live in [.devcontainer/features](.devcontainer/features). Toggle them i
 sudo bash .devcontainer/features/ollama/install.sh && nohup ollama serve > /tmp/ollama.log 2>&1 &
 bash .devcontainer/features/latex/install.sh
 ```
-
-> To stay signed in to `claude`, `codex` and `antigravity` after a rebuild, add your token as a [Codespaces secret](https://github.com/settings/codespaces).
