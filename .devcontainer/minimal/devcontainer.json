@@ -15,5 +15,17 @@
     "../features/nushell",
     "../features/neovim"
   ],
+  "customizations": {
+    "codespaces": {
+      "repositories": {
+        "nishkodotco/dotfiles": {
+          "permissions": {
+            "contents": "write",
+            "pull_requests": "write"
+          }
+        }
+      }
+    }
+  },
   "postCreateCommand": "sudo chown -R $(id -u):$(id -g) ${containerWorkspaceFolder}"
 }
