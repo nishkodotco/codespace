@@ -1,0 +1,7 @@
+{
+  "id": "nushell",
+  "name": "nushell",
+  "version": "1.0.0",
+  "description": "Install nushell and the starship prompt; nu becomes the default VS Code terminal.",
+  "options": {}
+}

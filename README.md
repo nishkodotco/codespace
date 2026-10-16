@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <code>zsh</code> · <code>neovim</code> · <code>claude</code> · <code>codex</code> · <code>antigravity</code> · <code>ollama</code> · <code>node</code> · <code>python</code> · <code>latex</code>
+  <code>nushell</code> · <code>neovim</code> · <code>claude</code> · <code>codex</code> · <code>antigravity</code> · <code>ollama</code> · <code>node</code> · <code>python</code> · <code>latex</code>
 </p>
 
 ---

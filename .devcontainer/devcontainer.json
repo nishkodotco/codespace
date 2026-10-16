@@ -7,7 +7,7 @@
   "remoteUser": "nishko",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "features": {
-    "./features/zsh": {},
+    "./features/nushell": {},
     "./features/neovim": {},
     "./features/claude": {},
     "./features/codex": {},
@@ -20,7 +20,12 @@
   "forwardPorts": [11434],
   "customizations": {
     "vscode": {
-      "settings": {},
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "nu": { "path": "/usr/local/bin/nu" }
+        },
+        "terminal.integrated.defaultProfile.linux": "nu"
+      },
       "extensions": [
         "anthropic.claude-code",
         "openai.chatgpt",

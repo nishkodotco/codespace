@@ -1,7 +1,0 @@
-{
-  "id": "zsh",
-  "name": "zsh",
-  "version": "1.0.0",
-  "description": "Install zsh via microdnf.",
-  "options": {}
-}
