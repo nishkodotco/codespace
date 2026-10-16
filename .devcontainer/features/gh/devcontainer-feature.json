@@ -1,0 +1,7 @@
+{
+  "id": "gh",
+  "name": "gh",
+  "version": "1.0.0",
+  "description": "Install the GitHub CLI.",
+  "options": {}
+}

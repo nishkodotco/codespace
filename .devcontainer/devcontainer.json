@@ -9,6 +9,7 @@
   "features": {
     "./features/nushell": {},
     "./features/neovim": {},
+    "./features/gh": {},
     "./features/claude": {},
     "./features/codex": {},
     "./features/antigravity": {},
