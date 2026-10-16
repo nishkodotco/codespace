@@ -10,7 +10,13 @@
 
 ---
 
-Features live in [.devcontainer/features](.devcontainer/features). Toggle them in [devcontainer.json](.devcontainer/devcontainer.json) and rebuild.
+Three configurations share the same dockerfile and features. Pick one under **Code → Codespaces → ⋯ → New with options**:
+
+- [minimal](.devcontainer/minimal/devcontainer.json): `nushell` · `neovim` · `gh`
+- [project](.devcontainer/project/devcontainer.json): minimal plus the AI CLIs (`claude` · `codex` · `antigravity`)
+- [maximal](.devcontainer/maximal/devcontainer.json): every feature, including `ollama` and `latex` (slowest to build)
+
+Features live in [.devcontainer/features](.devcontainer/features). Toggle them in either config and rebuild.
 
 `ollama` and `latex` are heavy, so they're opt-in. Install them in a running codespace when needed:
 

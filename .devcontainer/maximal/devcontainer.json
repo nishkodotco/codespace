@@ -1,0 +1,36 @@
+{
+  "name": "maximal",
+  "build": {
+    "context": "../..",
+    "dockerfile": "../dockerfile"
+  },
+  "remoteUser": "nishko",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+    "../features/nushell": {},
+    "../features/neovim": {},
+    "../features/gh": {},
+    "../features/claude": {},
+    "../features/codex": {},
+    "../features/antigravity": {},
+    "../features/node": {},
+    "../features/python": {},
+    "../features/ollama": {},
+    "../features/latex": {}
+  },
+  "overrideFeatureInstallOrder": [
+    "../features/nushell",
+    "../features/neovim"
+  ],
+  "forwardPorts": [11434],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "openai.chatgpt",
+        "Google.google-antigravity"
+      ]
+    }
+  },
+  "postCreateCommand": "sudo chown -R $(id -u):$(id -g) ${containerWorkspaceFolder}"
+}

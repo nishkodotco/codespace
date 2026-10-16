@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/ubi9/ubi-minimal
 
-LABEL maintainer="Nishant nishkodotco@gmail.com"
+LABEL maintainer="nishkodotco nishkodotco@gmail.com"
 ENV TZ=Asia/Kolkata
 SHELL ["/bin/bash", "-lc"]
 
