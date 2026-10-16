@@ -34,7 +34,15 @@
         "anthropic.claude-code",
         "openai.chatgpt",
         "Google.google-antigravity"
-      ]
+      ],
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "nu": {
+            "path": "/usr/local/bin/nu"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "nu"
+      }
     }
   },
   "postCreateCommand": "sudo chown -R $(id -u):$(id -g) ${containerWorkspaceFolder}"
