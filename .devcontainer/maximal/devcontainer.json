@@ -24,6 +24,16 @@
   ],
   "forwardPorts": [11434],
   "customizations": {
+    "codespaces": {
+      "repositories": {
+        "nishkodotco/dotfiles": {
+          "permissions": {
+            "contents": "write",
+            "pull_requests": "write"
+          }
+        }
+      }
+    },
     "vscode": {
       "extensions": [
         "anthropic.claude-code",
