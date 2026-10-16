@@ -9,7 +9,10 @@
   "features": {
     "../features/nushell": {},
     "../features/neovim": {},
-    "../features/gh": {}
+    "../features/gh": {},
+    "../features/claude": {},
+    "../features/codex": {},
+    "../features/antigravity": {}
   },
   "overrideFeatureInstallOrder": [
     "../features/nushell",
@@ -25,6 +28,13 @@
           }
         }
       }
+    },
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "openai.chatgpt",
+        "Google.google-antigravity"
+      ]
     }
   },
   "postCreateCommand": "sudo chown -R $(id -u):$(id -g) ${containerWorkspaceFolder}"

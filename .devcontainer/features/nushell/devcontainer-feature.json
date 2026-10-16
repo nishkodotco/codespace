@@ -3,5 +3,17 @@
   "name": "nushell",
   "version": "1.0.0",
   "description": "Install nushell and the starship prompt; nu becomes the default VS Code terminal.",
-  "options": {}
+  "options": {},
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "nu": {
+            "path": "/usr/local/bin/nu"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "nu"
+      }
+    }
+  }
 }
